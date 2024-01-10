@@ -14,7 +14,7 @@
 
 
 .top-nav{
-    background-color: #0e8753;
+    background-color: #265741;
 }
 
 .navElements{
@@ -50,6 +50,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px 40px; 
+    padding-left:60px;
     margin-top: -10px;
 }
 
@@ -61,13 +62,17 @@
 
 .primaryNavElements a{
     text-decoration: none;
-    color: #0e8753;
+    color: #265741;
+}
+
+.mobileLogo{
+    display:none;
 }
 
 
 .primaryNavElements .right,.left{
     display: flex;
-    gap:40px;
+    gap:25px;
     
 }
 
@@ -81,11 +86,23 @@
     width: 100%;
     background-color:#0e8753;
     margin-top: -30px;
+    
+}
+
+.mobile-banner {
+    width: 100%;
+    background-color:#0e8753;
+    margin-top: -30px; 
+    display:none;
 }
 
 .hero {
     position: relative;
 }
+     
+
+
+
 
 .textOnBAnner {
     display: flex;
@@ -110,15 +127,17 @@
 }
 
 .text1 {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 18px;
     padding:9px 0;
 }
 
 .text2 {
     font-size: 35px;
     line-height: 1.2;
+    
 }
+
+
 
 .rightText{
     display: flex;
@@ -132,7 +151,7 @@
 }
 
 .Subtext{
-    color:#0e8753;
+    color:#265741;
     padding:9px 0px;
     margin-bottom: 10px;
     font-size:36px;
@@ -140,10 +159,14 @@
     font-family: 'EB Garamond', serif;
 }
 
+.hamburgerMenu {
+    display: none; 
+}
+
 .mainText{
-    font-size:23px;
+    font-size:20px;
     font-family: 'EB Garamond', serif;
-    padding-right: 183px;
+    padding-right: 13px;
 }
 
 .heroCTA{
@@ -153,7 +176,7 @@
 
 .heroCTAButton{
     color:white;
-    background-color:#0e8753;
+    background-color:#265741;
     border-radius:7px;
     padding:10px;
     text-align: center;
@@ -162,6 +185,171 @@
 .heroCTAButton a {
     color:white;
     text-decoration: none;
+}
+
+a, a:active, a:focus {
+    outline: none;
+}
+
+.mobile-nav{
+    display:none;
+}
+
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Adjust as needed */
+    z-index: 1000;
+}
+
+.mobile-nav a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black; /* Adjust as needed */
+    font-size: 14px;
+    font-family: 'EB Garamond', serif;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size:29px;
+}
+
+hr{
+    width:70%;
+    margin:0 auto;
+}
+
+/******MEDIA QUERIES*************************/
+@media (max-width: 768px) {
+    /* Styles for phones go here */
+    body {
+        font-size: 13px;
+    }
+
+    .navElements{
+        display:none;
+    }
+
+    .banner{
+        display: none;
+    }
+    .mobile-banner {
+    display:block
+     
+    }
+
+
+    .textOnBAnner {
+        display: flex;
+        flex-direction: column; /* Align items in a column */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the element */
+        text-align: center;
+        color: #fff; /* Set the text color */
+        padding: 15px; /* Add padding for better readability */
+        width:100%
+    }
+    
+
+    .text1 {
+        font-size: 18px;
+        padding:9px 0;
+    }
+    
+    .text2 {
+        font-size: 35px;
+        line-height: 1.2;
+        
+}
+
+.rightText {
+    display:none;
+}
+
+.heroText{
+    padding:20px 20px;
+}
+
+
+
+
+.Subtext{
+    font-size: 20px;
+
+}
+
+.mainText{
+    font-size:16px;
+}
+
+
+.desktopLogo{
+    display:none;
+}
+
+.mobileLogo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%; /* Ensure the container takes up the full height */
+}
+
+.mobileLogo a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%; /* Ensure the link takes up the full height */
+}
+
+.left{
+    display:none;
+}
+
+a, a:active, a:focus {
+    outline: none;
+}
+
+
+.hamburgerMenu {
+    display: block; /* Show on smaller screens */
+    color: #0e8753;
+    font-size: 23px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.primaryNavElements{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:10px 40px;
+    padding-bottom: 17px;
+}
+
+.mobile-nav{
+    display:none;
+}
+
 }
 
 
