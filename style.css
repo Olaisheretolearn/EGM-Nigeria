@@ -266,6 +266,40 @@ hr{
     display: flex;
 }
 
+/*HOVER ANIMATIONS ON NAVIGATIONS*/
+/* Underline styles for ".left" navigation items */
+.primaryNav .left li a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+  }
+  
+  /* Underline animation */
+  .primaryNav .left li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: #265741;;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .primaryNav .left li a:hover::after,
+  .primaryNav .left li a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+  
+
+
+
+
+
+
+
 /******MEDIA QUERIES*************************/
 @media (max-width: 768px) {
     /* Styles for phones go here */
