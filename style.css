@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Oswald:wght@500&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,200;1,300&family=Quicksand:wght@300;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Oswald:wght@500&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,200;1,300&family=Quicksand:wght@300;500&display=swap');
 
 
 * {
@@ -9,6 +8,22 @@
     padding: 0;
    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Top nav */
 
@@ -22,9 +37,11 @@
     align-items: center;
     justify-content:flex-end;
     gap:30px;
+    font-size: 13px;
     color:white;
     padding: 20px 0;
     margin-right: 60px;
+    font-family: 'EB Garamond', serif;
 }
 
 .navElements li{
@@ -50,8 +67,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px 20px; 
-    padding-left:60px;
+    margin-right: 40px;
     margin-top: -10px;
+    font-size: 12px
 }
 
 
@@ -63,6 +81,7 @@
 .primaryNavElements a{
     text-decoration: none;
     color: #265741;
+    font-family: 'EB Garamond', serif;
 }
 
 .mobileLogo{
@@ -77,23 +96,32 @@
 }
 
 .primaryNavElements .left{
-    font-size: 15px;
-    padding-bottom: 32px;;
+    font-size: 20px;
+    padding-bottom: 32px;
+    gap:30px;
 
 }
 
+
+
 /* Hero */
 .banner{
-    width: 100%;
-    background-color:#0e8753;
-    margin-top: -30px;
+    width: 98%;
     
+    margin: 0 auto;
+    margin-top: -39px;
+    
+    
+}
+
+.banner img{
+    border-radius: 13px;
 }
 
 .mobile-banner {
     width: 100%;
-    background-color:#0e8753;
-    margin-top: -30px; 
+ 
+    margin-top: -50px; 
     display:none;
 }
 
@@ -133,7 +161,7 @@
 }
 
 .text2 {
-    font-size: 45px;
+    font-size: 55px;
     line-height: 1.2;
     
 }
@@ -157,7 +185,7 @@
     margin-bottom: 10px;
     font-size:36px;
     font-weight: 600;
-    font-family: 'EB Garamond', serif;
+ font-family: 'EB Garamond', serif;
 }
 
 .hamburgerMenu {
@@ -168,6 +196,9 @@
     font-size:20px;
     font-family: 'EB Garamond', serif;
     padding-right: 13px;
+   font-weight: 336;
+   color:#333;
+   letter-spacing:0.1px;
 }
 
 .heroCTA{
@@ -231,6 +262,10 @@ hr{
     margin:0 auto;
 }
 
+.quoteImage{
+    display: flex;
+}
+
 /******MEDIA QUERIES*************************/
 @media (max-width: 768px) {
     /* Styles for phones go here */
@@ -242,12 +277,22 @@ hr{
         display:none;
     }
 
+   
+
     .banner{
         display: none;
     }
+
     .mobile-banner {
-    display:block
+    display:block;
+    width:97%;
+    margin:0 auto;
+    
      
+    }
+
+    .mobile-banner img{
+        border-radius:13px;
     }
 
 
@@ -330,6 +375,7 @@ a, a:active, a:focus {
     display: block; /* Show on smaller screens */
     color: #0e8753;
     font-size: 23px;
+    margin-left: 102px;
 }
 
 .right {
