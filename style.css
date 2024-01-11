@@ -267,6 +267,70 @@ hr{
 }
 
 /*HOVER ANIMATIONS ON NAVIGATIONS*/
+
+/* Hover animation for ".Subtext" in ".heroText" section */
+.text1, .text2 {
+    transition: transform 1s;
+  }
+  
+  .text1:hover , .text2:hover{
+    transform: scale(1.1);
+  }
+
+  .heroCTAButton{
+    transition: transform 1s;
+  }
+
+  .heroCTAButton:hover{
+    transform: scale(1.1);
+  }
+
+  
+
+
+
+
+/* Underline styles for ".top-nav" navigation items */
+.top-nav .navElements li a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+  }
+  
+  /* Underline animation */
+  .top-nav .navElements li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .top-nav .navElements li a:hover::after,
+  .top-nav .navElements li a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Underline styles for ".left" navigation items */
 .primaryNav .left li a {
     display: block;
