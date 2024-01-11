@@ -29,7 +29,7 @@
 
 
 .top-nav{
-    background-color: #265741;
+    background-color: #16192c;
 }
 
 .navElements{
@@ -80,7 +80,7 @@
 
 .primaryNavElements a{
     text-decoration: none;
-    color: #265741;
+    color: #16192c;
     font-family: 'EB Garamond', serif;
 }
 
@@ -138,7 +138,7 @@
     justify-content: space-between;
     position: absolute;
     top: 50%;
-    left: 3%;
+    left: 20%;
     right: 3%; /* Add right spacing */
     transform: translateY(-50%);
     color: #fff; /* Set the text color */
@@ -180,7 +180,7 @@
 }
 
 .Subtext{
-    color:#265741;
+    color:#16192c;
     padding:9px 0px;
     margin-bottom: 10px;
     font-size:36px;
@@ -208,10 +208,11 @@
 
 .heroCTAButton{
     color:white;
-    background-color:#265741;
+    background-color:#16192c;
     border-radius:7px;
     padding:10px;
     text-align: center;
+    margin-top: -53px;
 }
 
 .heroCTAButton a {
@@ -262,14 +263,36 @@ hr{
     margin:0 auto;
 }
 
-.quoteImage{
-    display: flex;
+.heroText {
+    max-width: 1200px; /* Set the maximum width for the section */
+    margin: 0 auto; /* Center the content */
 }
+
+.textContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:190px;
+    align-items: center;
+}
+
+
+
+.textLeft img{
+margin-top: 83px;
+border-radius :9px;
+}
+
+.container {
+    transform: scaleY(-1);
+}
+
+
 
 /*HOVER ANIMATIONS ON NAVIGATIONS*/
 
 /* Hover animation for ".Subtext" in ".heroText" section */
-.text1, .text2 {
+.text1 , .text2 {
     transition: transform 1s;
   }
   
@@ -375,6 +398,26 @@ hr{
         display:none;
     }
 
+    .textLeft img{
+        display: none;
+        }
+
+        .textContainer {
+            gap: 10px; /* Adjust the gap for smaller screens */
+        }
+    
+        .heroText {
+            padding: 10px; /* Adjust padding for smaller screens */
+        }
+    
+        .textLeft img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .heroCTAButton{
+            margin-top: 10px;
+        }
    
 
     .banner{
@@ -500,8 +543,27 @@ a, a:active, a:focus {
 
 
 /* tablet media query    */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .primaryNavElements .left{
-        font-size: 18px;
+@media (max-width: 1024px) {
+    .textContainer {
+        gap: 15px; /* Adjust the gap for tablet screens */
+    }
+
+    .heroText {
+        padding: 15px; /* Adjust padding for tablet screens */
+       
+    }
+
+    .text
+
+    .Subtext{
+        font-size:23px
+    }
+
+    .mainText{
+        font-size: 16px;
+    }
+
+    .heroCTAButton{
+        margin-top: -10px;
     }
 }
