@@ -106,7 +106,7 @@
 
 /* Hero */
 .banner{
-    width: 98%;
+    width: 100%;
     
     margin: 0 auto;
     margin-top: -39px;
@@ -114,9 +114,10 @@
     
 }
 
-.banner img{
+/*.banner img{
     border-radius: 13px;
 }
+*/
 
 .mobile-banner {
     width: 100%;
@@ -286,6 +287,80 @@ border-radius :9px;
 .container {
     transform: scaleY(-1);
 }
+
+.pageTwo{
+    display:flex;
+    flex-direction: row;
+  
+}
+
+.leftPageTwo{
+    flex: 70%;
+    background-color: #e8eef1;
+    padding:20px 100px;
+    border-right:1px solid black;
+}
+
+.leftPageTwo h5{
+    font-size:19px;
+    font-family: 'EB Garamond', serif;
+}
+
+.rightPageTwo{
+    flex: 30%;
+    background-color: #DCF2F1
+}
+
+.box1{
+    background-color: white;
+    border-left:3px solid green;
+    margin-top:29px;
+    border-radius:7px;
+    transition: transform 1s ease-in-out;
+}
+
+.box1:hover {
+    transform: scale(1.05);
+    border-left-width: 5px; /* Increase the border width on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
+}
+
+.title{
+    font-size:14px;
+    font-family: 'EB Garamond', serif;
+}
+
+
+.box-content{
+    font-family: 'EB Garamond', serif;
+    padding : 30px;
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.boxhr{
+   margin-left:0px;
+   margin-top:7px;
+}
+
+.box-content p{
+    color:green;
+}
+
+.box-learnMore {
+    margin-top:37px;
+    
+}
+
+.box-learnMore a{
+    color: green;
+}
+
+
+
+
+
 
 
 
@@ -537,6 +612,28 @@ a, a:active, a:focus {
 .mobile-nav{
     display:none;
 }
+
+
+.pageTwo{
+    display:flex;
+    flex-direction: column;
+}
+
+.leftPageTwo{
+    background-color: #e8eef1;
+    padding:20px 20px;
+    border-right:1px solid black;
+}
+
+.box1{
+    border-radius: 7px;
+}
+
+.box-learnMore {
+    margin-top:17px;
+    
+}
+
 
 }
 
