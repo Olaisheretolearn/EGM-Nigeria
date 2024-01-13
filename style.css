@@ -213,7 +213,7 @@
     border-radius:7px;
     padding:10px;
     text-align: center;
-    margin-top: -53px;
+    
 }
 
 .heroCTAButton a {
@@ -265,15 +265,15 @@ hr{
 }
 
 .heroText {
-    max-width: 1200px; /* Set the maximum width for the section */
-    margin: 0 auto; /* Center the content */
+    max-width: 100%; /* Set the maximum width for the section */
+    margin: 0PX 30PX;; /* Center the content */
 }
 
 .textContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap:190px;
+    justify-content: space-between;
+    gap:100px;
     align-items: center;
 }
 
@@ -291,6 +291,7 @@ border-radius :9px;
 .pageTwo{
     display:flex;
     flex-direction: row;
+
   
 }
 
@@ -308,7 +309,7 @@ border-radius :9px;
 
 .rightPageTwo{
     flex: 30%;
-    background-color: #DCF2F1
+    background-color: #EEF5FF
 }
 
 .box1{
@@ -356,6 +357,147 @@ border-radius :9px;
 .box-learnMore a{
     color: green;
 }
+
+
+.rightPageTwo{
+    padding:20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+
+}
+
+.rightPageTwoTi{
+    margin-top:3px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+}
+
+.boxrightPageTwo{
+    margin:22px 0px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:39px;
+    border-radius:3px;
+    padding:9px;
+    border-left: 2px solid black;
+    transition: transform 1s ease-in-out;
+}
+
+.boxrightPageTwo:hover {
+    transform: scale(1.05);
+    border-left-width: 5px; /* Increase the border width on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
+}
+
+.Event{
+    display: flex;
+    flex-direction:column;
+    font-family: 'EB Garamond', serif;
+}
+
+.date{
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    margin: -2px 7px;
+}
+
+.EventTitle{
+    font-size:14px;
+    text-decoration: underline;
+}
+
+.EventTitle a{
+    color:black;
+}
+
+.eventTime{
+    margin-top:12px
+}
+
+.EventLearnMore{
+    margin-top:12px;
+}
+
+.EventLearnMore a{
+    color:black;
+}
+
+.contactUs {
+    font-family: 'EB Garamond', serif;
+    max-width: 100%;
+    padding:50px 100px;
+    border: 1px solid #ccc;
+    
+}
+
+.contactUs legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #5a5757;
+    border-radius: 4px;
+}
+
+fieldset{
+    padding:20px 20px;
+    border-radius: 10px;;
+}
+
+legend{
+    border-radius:7px;
+}
+
+#message{
+    height:120px;
+}
+
+.form-group{
+    margin-top:26px;
+}
+
+.form-group .error-message {
+    color: red;
+}
+
+.form-group.success input,
+.form-group.success textarea {
+    border-color: green;
+}
+
+.form-group.error input,
+.form-group.error textarea {
+    border-color: red;
+}
+
+.submit-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
 
 
 
@@ -632,6 +774,14 @@ a, a:active, a:focus {
 .box-learnMore {
     margin-top:17px;
     
+}
+
+.contactUs {
+    font-family: 'EB Garamond', serif;
+    max-width: 100%;
+    padding:10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
 
