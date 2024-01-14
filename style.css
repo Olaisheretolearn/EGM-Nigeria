@@ -72,6 +72,13 @@
     font-size: 12px
 }
 
+.primaryNavElements .right{
+    margin-left: 49px;
+}
+
+
+
+
 
 .primaryNavElements li{
     list-style: none;
@@ -273,7 +280,7 @@ hr{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap:100px;
+    gap:120px;
     align-items: center;
 }
 
@@ -361,9 +368,6 @@ border-radius :9px;
 
 .rightPageTwo{
     padding:20px 22px;
-    display: flex;
-    flex-direction: column;
-    gap:10px;
     
 
 }
@@ -380,7 +384,7 @@ border-radius :9px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:39px;
+    gap:29px;
     border-radius:3px;
     padding:9px;
     border-left: 2px solid black;
@@ -426,11 +430,39 @@ border-radius :9px;
     color:black;
 }
 
+
+.associatedBodies{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    justify-content:center;
+    background-color: #e4e5e9;
+}
+
+.associatedTitle{
+    margin:20px 0px;
+    font-family: 'EB Garamond', serif;
+    font-size: 19px;
+   
+
+}
+
+.associatedWebsites {
+    display: flex;  /* Use flex container */
+    gap: 3px;
+}
+
+.assoc1, .assoc2, .assoc3 {
+   
+}
+
 .contactUs {
     font-family: 'EB Garamond', serif;
-    max-width: 100%;
+    max-width: 70%;
     padding:50px 100px;
-    border: 1px solid #ccc;
+
+    margin: 10px auto;
     
 }
 
@@ -609,6 +641,12 @@ legend{
     /* Styles for phones go here */
     body {
         font-size: 13px;
+        margin-left: px;;
+    }
+
+    .primaryNavElements .right{
+        margin-left:-33px;
+
     }
 
     .navElements{
@@ -686,7 +724,10 @@ legend{
 }
 
 .heroText{
-    padding:20px 20px;
+    padding:10px 10px;
+    margin-left:-1px;
+    margin-right: -99px;
+
 }
 
 
@@ -733,7 +774,7 @@ a, a:active, a:focus {
     display: block; /* Show on smaller screens */
     color: #0e8753;
     font-size: 23px;
-    margin-left: 102px;
+    margin-left: 139px;
 }
 
 .right {
@@ -753,6 +794,15 @@ a, a:active, a:focus {
 
 .mobile-nav{
     display:none;
+}
+
+ul{
+    margin-top:18px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    list-style: none;
+    
 }
 
 
@@ -785,6 +835,19 @@ a, a:active, a:focus {
 }
 
 
+.associatedBodies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: #e4e5e9;
+}
+
+.associatedWebsites{
+    display: flex;
+    gap:-1000px;
+}
+
 }
 
 
@@ -813,4 +876,29 @@ a, a:active, a:focus {
     .heroCTAButton{
         margin-top: -10px;
     }
+
+    .textLeft img{
+        margin-top: 83px;
+        border-radius :9px;
+        display:none;
+        }
+
+        .leftText .text2{
+            margin-top:5px;
+            font-size:39px;
+            margin-left:-168px;
+            
+        }
+
+        .text1{
+            margin-left:-168px;
+        }
+
+        .textOnBAnner{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+         
+        }
 }
