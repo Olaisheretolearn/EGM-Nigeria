@@ -875,13 +875,14 @@ ul{
 
     .heroCTAButton{
         margin-top: -10px;
+        
     }
 
     .textLeft img{
         margin-top: 83px;
         border-radius :9px;
         display:none;
-        }
+    }
 
         .leftText .text2{
             margin-top:5px;
