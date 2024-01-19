@@ -30,6 +30,7 @@
 
 .top-nav{
     background-color: #16192c;
+    z-index: 1000;
 }
 
 .navElements{
@@ -69,7 +70,8 @@
     padding: 0px 20px; 
     margin-right: 40px;
     margin-top: -10px;
-    font-size: 12px
+    font-size: 12px;
+
 }
 
 .primaryNavElements .right{
@@ -261,7 +263,7 @@ a, a:active, a:focus {
 .close-icon {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 30px;
     cursor: pointer;
     font-size:29px;
 }
@@ -530,6 +532,47 @@ legend{
 }
 
 
+.footer{
+    background-color:#16192c;
+    padding: 50px 100px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    color:white;
+    font-family: 'EB Garamond', serif;
+    margin-top:55px;
+    
+}
+
+.one,.two,.three{
+display:flex;
+flex-direction: column;
+gap:27px;
+
+}
+
+.assocName,.contactInfoTitle,.LinksTitle{
+    font-size: 23px;
+    text-decoration: underline;
+   
+}
+
+.three .LinksTitle{
+    margin-bottom:-22px
+}
+
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+}
+
+.otherLinks li a{
+    color:white;
+
+}
+
+
 
 
 
@@ -653,12 +696,16 @@ legend{
         display:none;
     }
 
+    
+
     .textLeft img{
         display: none;
         }
 
         .textContainer {
-            gap: 10px; /* Adjust the gap for smaller screens */
+            gap: 10px;
+            margin-left: -20px;
+            width:370px
         }
     
         .heroText {
@@ -701,7 +748,6 @@ legend{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); /* Center the element */
-        text-align: center;
         color: #fff; /* Set the text color */
         padding: 15px; /* Add padding for better readability */
         width:100%
@@ -711,13 +757,20 @@ legend{
     .text1 {
         font-size: 18px;
         padding:9px 0;
+        margin-right:8px;
     }
     
     .text2 {
         font-size: 35px;
-        line-height: 1.2;
-        
-}
+        padding: 0 9px;
+      }
+
+      .leftText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
 
 .rightText {
     display:none;
@@ -725,8 +778,8 @@ legend{
 
 .heroText{
     padding:10px 10px;
-    margin-left:-1px;
-    margin-right: -99px;
+    margin-left:px;
+    margin-right: px;
 
 }
 
@@ -740,6 +793,7 @@ legend{
 
 .mainText{
     font-size:16px;
+    width:94vw;
 }
 
 
@@ -848,22 +902,77 @@ ul{
     gap:-1000px;
 }
 
+
+
+.footer{
+    background-color:hsl(232, 33%, 13%);
+    padding: 30px;
+    margin-left: -84px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-family: 'EB Garamond', serif;
+    margin-top:55px;
+    gap: 55px;
+    
+}
+
+.one,.two,.three{
+    
+display:flex;
+flex-direction: column;
+gap:27px;
+
+}
+.one{
+    margin-left: -14px; 
+}
+
+.three{
+    margin-left: -174px;
+}
+
+.assocName,.contactInfoTitle,.LinksTitle{
+    font-size: 13px;
+    text-decoration: underline;
+   
+}
+
+.three .LinksTitle{
+    margin-bottom:-22px
+}
+
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+}
+
+.otherLinks li a{
+    color:white;
+
+}
+
 }
 
 
 
 /* tablet media query    */
-@media (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1023px) {
     .textContainer {
         gap: 15px; /* Adjust the gap for tablet screens */
     }
 
     .heroText {
-        padding: 15px; /* Adjust padding for tablet screens */
+        padding: 11px; /* Adjust padding for tablet screens */
        
     }
 
-    .text
+    .text2{
+        font-size: 33px;;
+    }
 
     .Subtext{
         font-size:23px
@@ -871,11 +980,12 @@ ul{
 
     .mainText{
         font-size: 16px;
+        width:94vw
     }
 
     .heroCTAButton{
         margin-top: -10px;
-        
+
     }
 
     .textLeft img{
@@ -884,22 +994,11 @@ ul{
         display:none;
     }
 
-        .leftText .text2{
-            margin-top:5px;
-            font-size:39px;
-            margin-left:-168px;
-            
-        }
-
-        .text1{
-            margin-left:-168px;
-        }
-
-        .textOnBAnner{
-            display:flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-         
-        }
+    .leftPageTwo{
+        flex: 60%;
+        background-color: #e8eef1;
+        padding:20px 100px;
+        border-right:1px solid black;
+    }
+    
 }
