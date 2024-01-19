@@ -209,6 +209,8 @@
    font-weight: 336;
    color:#333;
    letter-spacing:0.1px;
+   width:92vw;
+   margin-bottom: 55px;;
 }
 
 .heroCTA{
@@ -571,6 +573,114 @@ gap:27px;
     color:white;
 
 }
+
+
+.execPictures {
+    display: flex;
+    justify-content: space-evenly; 
+    gap: 30px;
+}
+
+.execPictures {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pic {
+    width: 198px;
+    height: 275px;
+    margin-right: 60px; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image img {
+width: 100%;
+height: auto;
+object-fit: contain;
+}
+
+.image {
+    width: 198px;
+    height: 275px;
+    margin-right: 10px; 
+    margin-top: 0px;
+    display: flex;
+   
+}
+
+.imageDetails {
+   display:flex;
+   flex-direction: column;
+   font-family: 'EB Garamond', serif;
+   gap:4px;
+   margin-top: 22px;;
+}
+
+.Execname {
+    font-weight: 700;
+}
+
+.EventNew{
+    display: flex;
+    align-items: center;
+    gap:0px;
+}
+
+.EventPageMonth{
+    font-family: 'EB Garamond', serif;
+    font-size: 24px;
+    margin-top: 44px;;
+    
+}
+
+.EventHr{
+    opacity:0.4;
+    margin-top: 37px;;
+}
+
+.actualEvents{
+    font-family: 'EB Garamond', serif;
+    Margin-top:50px;
+    display:flex;
+    gap:50px;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.actualEventDate{
+    font-weight: 600;
+}
+
+.EventBrief{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.actualEventTitle{
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: underline;
+
+}
+
+.delivery{
+    font-weight: 700;
+}
+
+.actualBrief{
+    width:70vw;
+}
+
+
 
 
 
@@ -955,7 +1065,70 @@ gap:27px;
 
 }
 
+.execPictures {
+    display: flex;
+    justify-content: space-evenly; 
+    gap: 30px;
 }
+
+.execPictures {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.pic {
+    width: 198px;
+    height: 275px;
+    margin-right: 60px; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image img {
+width: 100%;
+height: auto;
+object-fit: contain;
+}
+
+.image {
+    width: 198px;
+    height: 275px;
+    margin-right: 10px; 
+    margin-top: 0px;
+    display: flex;
+   
+}
+
+.imageDetails {
+   display:flex;
+   flex-direction: column;
+   font-family: 'EB Garamond', serif;
+   gap:4px;
+   margin-top: 22px;;
+}
+
+.Execname {
+    font-weight: 700;
+}
+
+
+
+
+
+}
+
+
+
+
+
 
 
 
