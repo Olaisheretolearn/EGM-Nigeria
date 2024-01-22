@@ -721,6 +721,27 @@ object-fit: contain;
     width:70vw;
 }
 
+.Subtext-constitution{
+   
+        color:#16192c;
+        padding:9px 0px;
+        margin-bottom: 10px;
+        font-size:22px;
+        text-decoration: underline;
+        font-weight: 600;
+     font-family: 'EB Garamond', serif;
+
+}
+
+.signature{
+    padding:30px 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-around;
+}
+
 
 
 
@@ -939,6 +960,11 @@ object-fit: contain;
 
 .Subtext{
     font-size: 20px;
+
+}
+
+.Subtext-constitution{
+    font-size: 12px;
 
 }
 
