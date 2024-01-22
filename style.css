@@ -25,6 +25,7 @@
 
 
 
+
 /* Top nav */
 
 
@@ -534,15 +535,15 @@ legend{
 }
 
 
-.footer{
+.footer-content{
     background-color:#16192c;
-    padding: 50px 100px;
+    padding: 70px 100px;
     display:flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color:white;
     font-family: 'EB Garamond', serif;
-    margin-top:55px;
+   font-size: 15px;
     
 }
 
@@ -584,6 +585,7 @@ gap:27px;
 .execPictures {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .pic {
@@ -599,6 +601,9 @@ gap:27px;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    border:1px solid #16192c;
+    border:3px solid #16192c;
+    border-radius: 7px;;
 }
 
 .image img {
@@ -624,6 +629,35 @@ object-fit: contain;
    margin-top: 22px;;
 }
 
+.heroText ul li {
+    padding:9px;
+}
+
+.tag{
+    border:2px solid green;
+    width:49px;
+    color:green;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-news{
+    border:2px solid purple;
+    width:49px;
+    color:purple;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.together{
+    display: flex;
+    gap:10px;
+}
+
 .Execname {
     font-weight: 700;
 }
@@ -632,18 +666,25 @@ object-fit: contain;
     display: flex;
     align-items: center;
     gap:0px;
+    margin-top: -35px;;
 }
+
 
 .EventPageMonth{
     font-family: 'EB Garamond', serif;
     font-size: 24px;
-    margin-top: 44px;;
-    
+   
+}
+.EventNew2{
+    display: flex;
+    align-items: center;
+    gap:0px;
+    margin-top: 44px;
 }
 
 .EventHr{
     opacity:0.4;
-    margin-top: 37px;;
+    margin-top: 17px;;
 }
 
 .actualEvents{
@@ -794,11 +835,11 @@ object-fit: contain;
     /* Styles for phones go here */
     body {
         font-size: 13px;
-        margin-left: px;;
+      
     }
 
     .primaryNavElements .right{
-        margin-left:-33px;
+        margin-left:-3px;
 
     }
 
@@ -814,7 +855,7 @@ object-fit: contain;
 
         .textContainer {
             gap: 10px;
-            margin-left: -20px;
+            margin-left: -29px;
             width:370px
         }
     
@@ -938,7 +979,7 @@ a, a:active, a:focus {
     display: block; /* Show on smaller screens */
     color: #0e8753;
     font-size: 23px;
-    margin-left: 139px;
+    margin-left: 109px;
 }
 
 .right {
@@ -1083,6 +1124,7 @@ gap:27px;
     margin-right: 60px; 
     display: flex;
     flex-direction: column;
+    
 }
 
 
@@ -1104,6 +1146,8 @@ object-fit: contain;
     margin-right: 10px; 
     margin-top: 0px;
     display: flex;
+    border:3px solid #16192c;
+    border-radius: 7px;;
    
 }
 
@@ -1118,6 +1162,9 @@ object-fit: contain;
 .Execname {
     font-weight: 700;
 }
+
+
+
 
 
 
@@ -1141,6 +1188,25 @@ object-fit: contain;
     .heroText {
         padding: 11px; /* Adjust padding for tablet screens */
        
+    }
+
+    .primaryNavElements .left{
+        font-size: 16px;
+        padding-bottom: 32px;
+        gap:20px;
+    
+    }
+
+    .footer-content{
+        background-color:#16192c;
+        padding: 50px 50px 100px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        color:white;
+        font-family: 'EB Garamond', serif;
+       font-size: 15px;
+        
     }
 
     .text2{
@@ -1173,5 +1239,12 @@ object-fit: contain;
         padding:20px 100px;
         border-right:1px solid black;
     }
+
+    
+.execPictures{
+    display:flex;
+    flex-wrap: wrap;
+}
+
     
 }
