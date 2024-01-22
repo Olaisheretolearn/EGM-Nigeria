@@ -1076,55 +1076,51 @@ ul{
 
 .associatedWebsites{
     display: flex;
-    gap:-1000px;
 }
 
 
-
-.footer{
-    background-color:hsl(232, 33%, 13%);
-    padding: 30px;
-    margin-left: -84px;
-    display:flex;
+.footer-content{
+    display: flex;
     flex-direction: column;
+    gap:50px;
+    font-size: 15px;
     align-items: center;
-    justify-content: center;
-    color:white;
-    font-family: 'EB Garamond', serif;
-    margin-top:55px;
-    gap: 55px;
+    justify-content:flex-start;
     
-}
-
-.one,.two,.three{
-    
-display:flex;
-flex-direction: column;
-gap:27px;
 
 }
-.one{
-    margin-left: -14px; 
+
+.one, .two, .three{
+    margin-left: -180px;;
+
+}
+
+.two{
+    margin-left: -90px;
+    font-size: 13px;;
 }
 
 .three{
-    margin-left: -174px;
+    margin-left: -260px;
 }
 
 .assocName,.contactInfoTitle,.LinksTitle{
-    font-size: 13px;
+    font-size: 11px;
     text-decoration: underline;
    
 }
 
-.three .LinksTitle{
-    margin-bottom:-22px
+.contactInfoTitle{
+    margin-left: 0px;  
 }
+
+
 
 .contactDetails{
     display: flex;
     flex-direction: column;
     gap:7px;
+    margin-top: -20px;
 }
 
 .otherLinks li a{
