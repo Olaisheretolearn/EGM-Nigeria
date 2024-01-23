@@ -900,14 +900,14 @@ object-fit: contain;
 
     .mobile-banner {
     display:block;
-    width:97%;
+    width:100%;
     margin:0 auto;
     
      
     }
 
     .mobile-banner img{
-        border-radius:13px;
+        
     }
 
 
