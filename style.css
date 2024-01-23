@@ -154,6 +154,7 @@
     transform: translateY(-50%);
     color: #fff; /* Set the text color */
     padding: 20px; /* Add padding for better readability */
+    transition: all 1.5s ease-in-out
 }
 
 .rightText {
@@ -162,13 +163,21 @@
     align-items: center;
     justify-content: space-between;
     gap:77px;
+    transition: all 1.5s ease-in-out
 }
-
 
 .rightText img{
     width: 170px; 
     height: 220px;
+    transition: all 0.5s ease-in-out
 }
+
+
+.rightText img:hover{
+    scale: 1.1;
+}
+
+
 
 .leftText {
     max-width: 100%;
