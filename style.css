@@ -146,10 +146,10 @@
 
 .textOnBAnner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 10%;
     right: 3%; /* Add right spacing */
     transform: translateY(-50%);
     color: #fff; /* Set the text color */
@@ -157,9 +157,18 @@
 }
 
 .rightText {
-    text-align: right; /* Align the text to the right */
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:77px;
 }
 
+
+.rightText img{
+    width: 170px; 
+    height: 220px;
+}
 
 .leftText {
     max-width: 100%;
@@ -1266,6 +1275,24 @@ object-fit: contain;
 .execPictures{
     display:flex;
     flex-wrap: wrap;
+}
+
+.textOnBAnner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    
+    right: 3%; /* Add right spacing */
+    transform: translateY(-50%);
+    color: #fff; /* Set the text color */
+    padding: 20px; /* Add padding for better readability */
+}
+
+.rightText img{
+    width: 110px; 
+    height: 150px;
 }
 
     
