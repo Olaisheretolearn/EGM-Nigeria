@@ -969,6 +969,8 @@ body {
   .gallery-item img {
     width: 100%;
     height: auto;
+
+    border-radius: 3px;
     display: block;
     transition: transform 0.3s ease;
   }
@@ -977,6 +979,18 @@ body {
     transform: scale(1.1);
   }
   
+
+  .Subtext-gallery{
+ display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#16192c;
+    padding:9px 0px;
+    margin-bottom: 10px;
+    font-size:22px;
+    font-weight: 600;
+    font-family: 'EB Garamond', serif;
+  }
 
 
 
