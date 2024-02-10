@@ -1016,6 +1016,10 @@ body {
     transition: all ease-in-out;
   }
 
+  .mainText2 ol{
+    margin-left: -20px;;
+  }
+
 
 
 
