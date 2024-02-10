@@ -131,11 +131,31 @@
                  <br> <br>
                  In this lively community, we believe in more than just acknowledging achievements; we strive to recognize the unique talents and 
                 contributions of each member.
+
+                    <br> <br>
+           
+                <div class="mainText2" style="display: none;"><p>
+                    The Nigerian Chapter of the EGM was born on January 16, 2020, after EGM Council approved the constitution and by-laws of the Nigerian Members Chapter Constitution, thereby establishing it as a chapter under Bye Law 19.3. 
+    
+                  <br> <br>  Johnson Aina (PEng) and Wale Jegede (PEng) are the pioneers of the chapter. In November 2019 they added one more honourable person, Onis Sampson (PEng) to the pioneering group, and the three met with Grant Koropatnick (Peng), the then Registrar of the EGM. They discussed the plan of starting the Nigerian Chapter of EGM. It was after this meeting and having fulfilled the requirements of a new chapter that the Nigerian Chapter of the EGM became approved as indicated above. 
+                    
+                 <br> <br>   Find below the names of the first executive committee of the chapter:
+    
+                 <ol>
+                    <li><strong>Victor Adindu PEng &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chair</strong></li>
+                    <li><strong>Johnson Aina PEng &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vice  Chair</strong></li>
+                    <li><strong> Olawale Jegede</strong> PEng &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public Relations Officer</strong></li>
+                    <li><strong>Victoria  Kokobili EIT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Secretary</strong></li>
+                    <li><strong> Onisokonikumen Sampson   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Treasurer</strong></li>
+                
+                </ol>
+                    
+                </p></div>
                 
                 
                 <div class="heroCTA">
                     <div class="heroCTAButton">
-                        <a href="aboutus.html">Learn More</a>
+                        <a href="">Learn More</a>
                     </div>
                 </div>
                 
@@ -145,9 +165,6 @@
             </p></div></div>
         
         
-            <div class="textLeft">
-                <img src="/images/pexels-manuel-michael-14430075.jpg" alt="" style=" width: auto; height: 500px;">
-            </div>
             
       </div>
 
@@ -382,6 +399,25 @@
         $(".close-icon").click(function() {            $(".mobile-nav").fadeOut();
         });
     });
+
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        const mainTextDiv = document.querySelector('.mainText2');
+        const seeMoreButton = document.querySelector('.heroCTAButton a');
+
+        seeMoreButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (mainTextDiv.style.display === 'none') {
+                mainTextDiv.style.display = 'block';
+                seeMoreButton.textContent = 'See Less';
+            } else {
+                mainTextDiv.style.display = 'none';
+                seeMoreButton.textContent = 'See More';
+            }
+        });
+    });
+
+
 
 
     
