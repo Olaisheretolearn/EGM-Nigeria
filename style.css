@@ -992,6 +992,25 @@ body {
     font-family: 'EB Garamond', serif;
   }
 
+  .Subtextt{
+    color:#16192c;
+    padding:9px 0px;
+    margin-bottom: 10px;
+    font-size:36px;
+    font-weight: 600;
+    font-family: 'EB Garamond', serif;
+    margin-top: 50px;
+  }
+
+  .subcomm{
+    font-family: 'EB Garamond', serif;
+  }
+
+  .subcomm ol {
+    margin-top: 10px;
+    font-size:19px;
+  }
+
 
 
 
