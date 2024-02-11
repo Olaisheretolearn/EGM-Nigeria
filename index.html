@@ -100,10 +100,14 @@
         <section class="hero">
             <div class="banner">
                 <img src="images/Desktopbanner.jpg" alt="" style="width: 100%; height: auto; display: block;">
+                <img src="images/slider.jpg" alt="" style="width: 100%; height: auto; display: block;">
+                
             </div>
-
+        
             <div class="mobile-banner">
                 <img src="images/Mobilerbanner.jpg" alt="" style="width: 100%; height: auto; display: block;">
+                <img src="images/AnotherMobileImage.jpg" alt="" style="width: 100%; height: auto; display: block;">
+           
             </div>
         
             <div class="textOnBAnner">
@@ -123,39 +127,25 @@
             <div class="textContainer">
             <div class="textRight">
             <div class="Subtext">Regulating the professions. Protecting the public</div>
-            <div class="mainText"><p>We are a dynamic and vibrant community, a tapestry woven with the enthusiasm and
-                 motivation of individuals who share a common purpose — to honor and celebrate the outstanding accomplishments 
-                 of Nigerian engineers and geoscientists in Manitoba. Within our community, there exists a collective dedication 
-                 that propels us forward, driving us to foster a nurturing and supportive environment.
-                 
-                 <br> <br>
-                 In this lively community, we believe in more than just acknowledging achievements; we strive to recognize the unique talents and 
-                contributions of each member.
+            <div class="mainText"><p>We are not just a community; we are a dynamic and vibrant tapestry, intricately woven with the enthusiasm, passion, and motivation of individuals who share a common purpose – to honor and celebrate the exceptional accomplishments of Nigerian engineers and geoscientists residing in Manitoba. Our community thrives on diversity, drawing strength from the rich mosaic of cultures, experiences, and expertise that each member brings to the table.
+
+                <br> <br>    At the heart of our community lies a collective dedication that serves as the driving force propelling us forward. It is this unwavering commitment that fuels our efforts to create a nurturing and supportive environment where every member feels valued, respected, and empowered to reach their full potential. We believe in fostering meaningful connections and forging lasting bonds that transcend professional boundaries, uniting us in our shared vision for progress and excellence.
 
                     <br> <br>
            
-                <div class="mainText2" style="display: none;"><p>
-                    The Nigerian Chapter of the EGM was born on January 16, 2020, after EGM Council approved the constitution and by-laws of the Nigerian Members Chapter Constitution, thereby establishing it as a chapter under Bye Law 19.3. 
-    
-                  <br> <br>  Johnson Aina (PEng) and Wale Jegede (PEng) are the pioneers of the chapter. In November 2019 they added one more honourable person, Onis Sampson (PEng) to the pioneering group, and the three met with Grant Koropatnick (Peng), the then Registrar of the EGM. They discussed the plan of starting the Nigerian Chapter of EGM. It was after this meeting and having fulfilled the requirements of a new chapter that the Nigerian Chapter of the EGM became approved as indicated above. 
+         <div class="mainText2" style="display: none;"><p>
+            Within the vibrant tapestry of our community, we do more than simply acknowledge achievements; we celebrate them. We recognize and honor the unique talents, skills, and contributions of each member, fostering a culture of appreciation and gratitude. Whether it's a groundbreaking project, an innovative solution, or a milestone accomplishment, we take pride in highlighting the successes that shape our collective journey.
+
+            <br> <br>   In this lively and dynamic community, collaboration is key. We come together to exchange ideas, share insights, and inspire one another to reach greater heights. Through networking events, professional development workshops, and collaborative initiatives, we create opportunities for growth, learning, and advancement, enriching both our personal and professional lives.
+            
+            <br> <br>   As we continue to weave the threads of our tapestry, let us embrace the spirit of unity, resilience, and determination that defines us. Together, we are stronger. Together, we are unstoppable. Together, we are shaping the future of Nigerian engineers and geoscientists in Manitoba and beyond.
                     
-                 <br> <br>   Find below the names of the first executive committee of the chapter:
-    
-                 <ol>
-                    <li><strong>Victor Adindu PEng &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chair</strong></li>
-                    <li><strong>Johnson Aina PEng &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vice  Chair</strong></li>
-                    <li><strong> Olawale Jegede PEng &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public Relations Officer</strong></li>
-                    <li><strong>Victoria  Kokobili EIT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Secretary</strong></li>
-                    <li><strong> Onisokonikumen Sampson   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Treasurer</strong></li>
-                
-                </ol>
-                    
-                </p></div>
+                </p></div> 
                 
                 
                 <div class="heroCTA">
                     <div class="heroCTAButton">
-                        <a href="">Learn More</a>
+                        <a href="">See More</a>
                     </div>
                 </div>
                 
@@ -389,6 +379,52 @@
     <!-- Add this script to your HTML file, make sure to include jQuery if not already included -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+        const desktopBannerImages = document.querySelectorAll('.banner img');
+        const mobileBannerImages = document.querySelectorAll('.mobile-banner img');
+        let currentDesktopImageIndex = 0;
+        let currentMobileImageIndex = 0;
+
+        function changeDesktopImage() {
+            // Hide all desktop banner images
+            desktopBannerImages.forEach(image => {
+                image.style.display = 'none';
+            });
+
+            // Show the next desktop banner image
+            desktopBannerImages[currentDesktopImageIndex].style.display = 'block';
+
+            // Increment the desktop image index
+            currentDesktopImageIndex = (currentDesktopImageIndex + 1) % desktopBannerImages.length;
+        }
+
+        function changeMobileImage() {
+            // Hide all mobile banner images
+            mobileBannerImages.forEach(image => {
+                image.style.display = 'none';
+            });
+
+            // Show the next mobile banner image
+            mobileBannerImages[currentMobileImageIndex].style.display = 'block';
+
+            // Increment the mobile image index
+            currentMobileImageIndex = (currentMobileImageIndex + 1) % mobileBannerImages.length;
+        }
+
+        // Change desktop image every 3 seconds
+        setInterval(changeDesktopImage, 3000);
+
+        // Change mobile image every 3 seconds
+        setInterval(changeMobileImage, 3000);
+    });
+
+
+
+
+
+
+
     $(document).ready(function() {
         // Toggle mobile menu on hamburger icon click
         $(".hamburgerMenu").click(function() {
@@ -450,7 +486,11 @@
                 alert("Form contains errors. Please check and correct.");
             }
         }
-    </script>
+
+
+  
+
+  
 </script>
 
     
