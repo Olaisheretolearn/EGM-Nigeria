@@ -101,13 +101,14 @@
             <div class="banner">
                 <img src="images/Desktopbanner.jpg" alt="" style="width: 100%; height: auto; display: block;">
                 <img src="images/slider.jpg" alt="" style="width: 100%; height: auto; display: block;">
-                
+                <img src="images/slider2.jpg" alt="" style="width: 100%; height: auto; display: block;">
+               
             </div>
         
             <div class="mobile-banner">
                 <img src="images/Mobilerbanner.jpg" alt="" style="width: 100%; height: auto; display: block;">
-                <img src="images/AnotherMobileImage.jpg" alt="" style="width: 100%; height: auto; display: block;">
-           
+                <img src="images/MobilerBanner2.jpg" alt="" style="width: 100%; height: auto; display: block;">
+                <img src="images/MobilerBanner3.jpg" alt="" style="width: 100%; height: auto; display: block;">
             </div>
         
             <div class="textOnBAnner">
@@ -380,11 +381,26 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
 
-document.addEventListener("DOMContentLoaded", function() {
+
+    document.addEventListener("DOMContentLoaded", function() {
         const desktopBannerImages = document.querySelectorAll('.banner img');
         const mobileBannerImages = document.querySelectorAll('.mobile-banner img');
         let currentDesktopImageIndex = 0;
         let currentMobileImageIndex = 0;
+
+        // Hide all desktop banner images except the first one
+        desktopBannerImages.forEach((image, index) => {
+            if (index !== 0) {
+                image.style.display = 'none';
+            }
+        });
+
+        // Hide all mobile banner images except the first one
+        mobileBannerImages.forEach((image, index) => {
+            if (index !== 0) {
+                image.style.display = 'none';
+            }
+        });
 
         function changeDesktopImage() {
             // Hide all desktop banner images
@@ -418,6 +434,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Change mobile image every 3 seconds
         setInterval(changeMobileImage, 3000);
     });
+
 
 
 
