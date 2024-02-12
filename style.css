@@ -150,6 +150,7 @@ html{
 
 
 .textOnBAnner {
+    font-family: 'EB Garamond', serif;
     display: flex;
     justify-content: space-around;
     position: absolute;
@@ -1093,6 +1094,7 @@ body {
 
 
     .textOnBAnner {
+        font-family: 'EB Garamond', serif;
         display: flex;
         flex-direction: column; /* Align items in a column */
         align-items: center; /* Center items horizontally */
