@@ -1023,6 +1023,21 @@ body {
 
 
 
+  .center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'EB Garamond', serif;
+    background-color:#16192c;
+    color: #fff;
+    font-size: 9px;
+  }
+
+  .center a{
+    color: #fff;
+  }
+
+
 
 
 
