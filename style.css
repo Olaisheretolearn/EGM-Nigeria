@@ -163,6 +163,10 @@ html{
     transition: all 1.5s ease-in-out
 }
 
+.linkedin a {
+     color:white;
+}
+
 .rightText {
     text-align: right;
     display: flex;
