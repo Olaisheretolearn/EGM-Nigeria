@@ -32,12 +32,13 @@
             <div class="primaryNavElements">
                 <div class="right">
                     <li class="desktopLogo"><a href="https://www.enggeomb.ca/"><img src="/images/option4.png" alt="" style="width: 110px; height: 130px;" loading="lazy"></a></li>
-<li class="desktopLogo"><a href="#"><img src="/images/Nigerian_Members_Chapter_3_-removebg-preview.png" alt="" style="width: 130px; height: 130px;" loading="lazy"></a></li>
+<li class="desktopLogo"><a href="#"><img src="/images/Nigerian_Members_Chapter_7_-removebg-preview.png" alt="" style="width: 130px; height: 130px; margin-top: 7px;" loading="lazy"></a></li>
 
 <!-- Mobile versions -->
-<li class="mobileLogo"><a href="https://www.enggeomb.ca/"><img src="/images/option4.png" alt="" style="width: 80px; height: 80px;" loading="lazy"></a></li>
-<li class="mobileLogo"><a href="#"><img src="/images/option5.png" alt="" style="width: 80px; height: 80px;" loading="lazy"></a></li>
-
+<div class="mobileNavv">
+<li class="mobileLogo"><a href="https://www.enggeomb.ca/"><img src="/images/option4.png" alt="" style="width: 100px; height: 100px;" loading="lazy"></a></li>
+<li class="mobileLogo"><a href="#"><img src="/images/Nigerian_Members_Chapter_7_-removebg-preview.png" alt="" style="width: 100px; height: 100px; " loading="lazy" ></a></li>
+</div>
                     
                     
                 </div>
@@ -100,18 +101,21 @@
 
         <section class="hero">
             <div class="banner">
-                <img src="images/Desktopbanner.jpg" alt="" style="width: 100%; height: auto; display: block;">
-                <img src="images/slider.jpg" alt="" style="width: 100%; height: auto; display: block;">
-                <img src="images/slider2.jpg" alt="" style="width: 100%; height: auto; display: block;">
-               
+                <div class="image-wrapper">
+                    <img src="images/Desktopbanner.jpg" alt="">
+                    <img src="images/slider.jpg" alt="">
+                    <img src="images/slider2.jpg" alt="">
+                </div>
             </div>
-        
+            
             <div class="mobile-banner">
-                <img src="images/Mobilerbanner.jpg" alt="" style="width: 100%; height: auto; display: block;">
-                <img src="images/MobilerBanner2.jpg" alt="" style="width: 100%; height: auto; display: block;">
-                <img src="images/MobilerBanner3.jpg" alt="" style="width: 100%; height: auto; display: block;">
+                <div class="image-wrapper">
+                    <img src="images/Mobilerbanner.jpg" alt="">
+                    <img src="images/MobilerBanner2.jpg" alt="">
+                   
+                </div>
             </div>
-        
+            
             <div class="textOnBAnner">
                 <div class="leftText"> 
                     <div class="text1">Engineers & Geoscientists</div>
@@ -388,61 +392,98 @@
 
     <!-- Add this script to your HTML file, make sure to include jQuery if not already included -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 <script>
 
+// Function to handle fading in and out images
+function fadeImages($wrapper) {
+    var $images = $wrapper.find('img');
+    var currentIndex = 0;
 
-    document.addEventListener("DOMContentLoaded", function() {
-        const desktopBannerImages = document.querySelectorAll('.banner img');
-        const mobileBannerImages = document.querySelectorAll('.mobile-banner img');
-        let currentDesktopImageIndex = 0;
-        let currentMobileImageIndex = 0;
-
-        // Hide all desktop banner images except the first one
-        desktopBannerImages.forEach((image, index) => {
-            if (index !== 0) {
-                image.style.display = 'none';
-            }
+    function showImage(index) {
+        $images.eq(currentIndex).fadeOut(2000, function() {
+            // Callback function to ensure the next image starts fading in after the current one fades out
+            $images.eq(index).fadeIn(2000);
         });
+        currentIndex = index;
+    }
 
-        // Hide all mobile banner images except the first one
-        mobileBannerImages.forEach((image, index) => {
-            if (index !== 0) {
-                image.style.display = 'none';
-            }
-        });
+    // Start the slideshow
+    setInterval(function() {
+        var newIndex = (currentIndex + 1) % $images.length;
+        showImage(newIndex);
+    }, 10000); // Change 10000 to adjust the interval in milliseconds
+}
 
-        function changeDesktopImage() {
-            // Hide all desktop banner images
-            desktopBannerImages.forEach(image => {
-                image.style.display = 'none';
-            });
+// Call the fadeImages function for each banner
+fadeImages($('.banner .image-wrapper'));
+fadeImages($('.mobile-banner .image-wrapper'));
 
-            // Show the next desktop banner image
-            desktopBannerImages[currentDesktopImageIndex].style.display = 'block';
 
-            // Increment the desktop image index
-            currentDesktopImageIndex = (currentDesktopImageIndex + 1) % desktopBannerImages.length;
-        }
 
-        function changeMobileImage() {
-            // Hide all mobile banner images
-            mobileBannerImages.forEach(image => {
-                image.style.display = 'none';
-            });
+// document.addEventListener("DOMContentLoaded", function() {
+//     const desktopBannerImages = document.querySelectorAll('.banner img');
+//     const mobileBannerImages = document.querySelectorAll('.mobile-banner img');
+//     let currentDesktopImageIndex = 0;
+//     let currentMobileImageIndex = 0;
 
-            // Show the next mobile banner image
-            mobileBannerImages[currentMobileImageIndex].style.display = 'block';
+//     // Function to fade out the current image
+//     function fadeOut(element) {
+//         let opacity = 1;
+//         const fadeEffect = setInterval(function () {
+//             if (!element.style.opacity) {
+//                 element.style.opacity = 1;
+//             }
+//             if (opacity <= 0) {
+//                 clearInterval(fadeEffect);
+//                 element.style.display = 'none';
+//             } else {
+//                 element.style.opacity = opacity;
+//                 opacity -= 0.05;
+//             }
+//         }, 50);
+//     }
 
-            // Increment the mobile image index
-            currentMobileImageIndex = (currentMobileImageIndex + 1) % mobileBannerImages.length;
-        }
+//     // Function to fade in the next image
+//     function fadeIn(element) {
+//         let opacity = 0;
+//         element.style.display = 'block';
+//         const fadeEffect = setInterval(function () {
+//             if (!element.style.opacity) {
+//                 element.style.opacity = 0;
+//             }
+//             if (opacity >= 1) {
+//                 clearInterval(fadeEffect);
+//             } else {
+//                 element.style.opacity = opacity;
+//                 opacity += 0.05;
+//             }
+//         }, 50);
+//     }
 
-        // Change desktop image every 3 seconds
-        setInterval(changeDesktopImage, 5000);
+//     // Change desktop image with fade effect
+//     function changeDesktopImage() {
+//         fadeOut(desktopBannerImages[currentDesktopImageIndex]);
+//         currentDesktopImageIndex = (currentDesktopImageIndex + 1) % desktopBannerImages.length;
+//         fadeIn(desktopBannerImages[currentDesktopImageIndex]);
+//     }
 
-        // Change mobile image every 3 seconds
-        setInterval(changeMobileImage, 5000);
-    });
+//     // Change mobile image with fade effect
+//     function changeMobileImage() {
+//         fadeOut(mobileBannerImages[currentMobileImageIndex]);
+//         currentMobileImageIndex = (currentMobileImageIndex + 1) % mobileBannerImages.length;
+//         fadeIn(mobileBannerImages[currentMobileImageIndex]);
+//     }
+
+//     // Change desktop image every 3 seconds
+//     setInterval(changeDesktopImage, 5000);
+
+//     // Change mobile image every 3 seconds
+//     setInterval(changeMobileImage, 5000);
+// });
 
 
 

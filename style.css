@@ -152,7 +152,7 @@ html{
 .textOnBAnner {
     font-family: 'EB Garamond', serif;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: absolute;
     top: 50%;
     left: 10%;
@@ -171,14 +171,14 @@ html{
     text-align: right;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap:76px;
     transition: all 1.5s ease-in-out
 }
 
 .rightText img{
-    width: 170px; 
-    height: 220px;
+    width: 150px; 
+    height: 200px;
     transition: all 0.5s ease-in-out
 }
 
@@ -192,6 +192,7 @@ html{
 .leftText {
     max-width: 100%;
     
+    
 }
 
 .text1 {
@@ -200,7 +201,7 @@ html{
 }
 
 .text2 {
-    font-size: 55px;
+    font-size: 65px;
     line-height: 1.2;
     
 }
@@ -1057,6 +1058,27 @@ body {
     color: #fff;
   }
 
+  .banner, .mobile-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrapper {
+    display: flex;
+    position: relative;
+    width: 300%; /* Adjust width based on the number of images */
+    background-color: #16192c;;
+}
+
+.banner img, .mobile-banner img {
+    width: calc(100% / 3); /* Adjust width based on the number of images */
+    height: auto;
+    transition: transform 9s ease-in-out;
+    
+}
+
+
+
 
 
 
@@ -1200,14 +1222,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 100%; /* Ensure the container takes up the full height */
+    font-size: 888px;
+   
+}
+
+.mobileNavv{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-left:33px;
+    margin-top:-3px;
+    padding-top:13px;
+    gap:4px;
 }
 
 .mobileLogo a {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 100%; /* Ensure the link takes up the full height */
+   
 }
 
 .left{
@@ -1236,9 +1269,9 @@ a, a:active, a:focus {
 .primaryNavElements{
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    padding:10px 40px;
-    padding-bottom: 17px;
+    justify-content:space-around;
+    padding:0px 0px;
+   
 }
 
 .mobile-nav{
