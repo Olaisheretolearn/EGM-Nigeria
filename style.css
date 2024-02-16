@@ -596,6 +596,15 @@ gap:27px;
     gap:17px;
 }
 
+.logo img{
+    width: 90px;
+    height:auto;
+   
+
+}
+
+
+
 .three .LinksTitle{
     margin-bottom:-22px
 }
@@ -1317,6 +1326,13 @@ ul{
     font-size: 11px;
     text-decoration: underline;
    
+}
+
+.logo img{
+    width: 60px;
+    height:auto;
+    margin-top:-12px;
+
 }
 
 .contactInfoTitle{
