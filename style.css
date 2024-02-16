@@ -589,6 +589,13 @@ gap:27px;
    
 }
 
+.assocName{
+    display:flex;
+
+    justify-content: center;
+    gap:17px;
+}
+
 .three .LinksTitle{
     margin-bottom:-22px
 }
