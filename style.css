@@ -1078,6 +1078,26 @@ body {
 }
 
 
+.constitution {
+    max-width: 800px;
+    margin: 0 ;
+    padding: 0px;
+}
+.custom-list {
+    counter-reset: list-counter;
+    list-style-type: none;
+}
+
+.custom-list li:before {
+    content: counter(list-counter, lower-alpha) ". "; /* Use lower case alphabets for list item markers */
+    counter-increment: list-counter;
+}
+
+
+.num1{
+    margin-left:93px;
+}
+
 
 
 
@@ -1145,9 +1165,6 @@ body {
      
     }
 
-    .mobile-banner img{
-        
-    }
 
 
     .textOnBAnner {
