@@ -1092,11 +1092,35 @@ body {
     content: counter(list-counter, lower-alpha) ". "; /* Use lower case alphabets for list item markers */
     counter-increment: list-counter;
 }
+.custom-list {
+    /* Your existing styles for custom-list */
+}
 
 
 .num1{
     margin-left:93px;
 }
+
+
+.constitution h2 {
+    margin-top: 30px;
+    font-size: 20px;
+}
+.custom-list {
+    counter-reset: list-counter;
+    list-style-type: none;
+}
+
+.custom-list li:before {
+    content: counter(list-counter, lower-alpha) ".) "; /* Use lower case alphabets for list item markers */
+    counter-increment: list-counter;
+}
+
+
+.constitution p {
+    margin-bottom: 15px;
+}
+
 
 
 
