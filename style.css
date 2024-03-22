@@ -18,7 +18,9 @@ html{
 
 
 
-
+body{
+    overflow-x: hidden;
+}
 
 
 
@@ -257,6 +259,26 @@ html{
     
 }
 
+
+.heroCTAi{
+    padding:30px 0px;
+    width:120px;
+}
+
+.heroCTAButtoni{
+    color:white;
+    background-color:#16192c;
+    border-radius:7px;
+    padding:10px;
+    text-align: center;
+    
+}
+
+.heroCTAButtoni a {
+    color:white;
+    text-decoration: none;
+}
+
 .heroCTAButton a {
     color:white;
     text-decoration: none;
@@ -451,6 +473,10 @@ border-radius :9px;
 .EventTitle a{
     color:black;
     text-decoration: none;
+}
+
+.table{
+    display: none;
 }
 
 .eventTime{
@@ -999,17 +1025,100 @@ body {
     color:#333;
   }
 
-  .howto{
+  .message{
+    margin-top: 120px;
+  }
+
+  .howTo{
+    font-family: 'EB Garamond', serif;
     display:flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 34px;;
   }
 
 .howtoOne, .howtoTwo , .howtoThree{
-    border: 1px solid red;
-    width: 33.33333%;
+    
+    background-color: #f2f2fb;
+    border-top:9px solid   #16192c;;
+    border-radius: 5px;
+    width: 30.33333%;
+    height: 200px;
 }
+
+ .nom {
+    margin-left: 22px;;
+    margin-top: 12px;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.formDownload{
+    margin-left: 22px;;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+
+.position{
+    margin-left: 22px;;
+    margin-top: 12px;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+
+
+.electableList{
+    margin-left: 22px;;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+
+.guideline{
+    margin-left: 22px;;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+
+
+
+
+
+.timetable {
+    font-family: 'EB Garamond', serif;
+    max-width: 50%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  th, td {
+    padding: 15px 17px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    
+    th, td {
+      white-space: nowrap;
+    }
+  }
 
 
 
@@ -1161,7 +1270,9 @@ body {
 
 
 
-
+.phoneLink{
+    display:none;
+}
 
 
 
@@ -1172,10 +1283,11 @@ body {
 
 
 /******MEDIA QUERIES*************************/
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     /* Styles for phones go here */
     body {
         font-size: 13px;
+         overflow-x: hidden;
       
     }
 
@@ -1522,6 +1634,178 @@ object-fit: contain;
 }
 
 
+.electionProcess p {
+    font-family: 'EB Garamond', serif;
+    font-size:16px;
+    width:94vw;
+    color:#333;
+    
+  }
+
+
+  .message p {
+    font-family: 'EB Garamond', serif;
+    font-size:16px;
+    width:94vw;
+    margin-top: 12px;
+    color:#333;
+  }
+
+  .message{
+    margin-top: 120px;
+  }
+
+  .howTo{
+    font-family: 'EB Garamond', serif;
+    display:flex;
+    width:350px;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+  gap:20px;
+  
+  }
+
+.howtoOne, .howtoTwo , .howtoThree{
+    
+    background-color: #f2f2fb;
+    border-top:3px solid   #16192c;;
+    border-radius: 5px;
+  
+    width:83.33%;
+    height: 200px;
+}
+
+ .nom {
+    margin-left: 22px;;
+    margin-top: 12px;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.formDownload{
+    margin-left: 22px;;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+
+.position{
+    margin-left: 22px;;
+    margin-top: 12px;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+
+
+.electableList{
+    margin-left: 22px;;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+
+.electableList li{
+    margin-left: 22px;;
+}
+
+.guideline{
+    margin-left: 22px;;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+
+
+
+
+.phoneLink {
+    display: block; 
+    margin-top: 30px;
+    text-align: center;
+    width:43%;
+    padding:5px;
+    border-radius: 5px;
+    background-color: #16192c;
+
+
+  }
+
+  .phoneLink a {
+    text-decoration: none;
+    color:white;
+  }
+
+  .heroCTAi{
+    padding:30px 0px;
+    width:120px;
+    display: none;;
+}
+
+.heroCTAButtoni{
+    color:white;
+    background-color:#16192c;
+    border-radius:7px;
+    padding:10px;
+    text-align: center;
+    display: none;;
+    
+}
+
+.heroCTAButtoni a {
+    color:white;
+    text-decoration: none;
+    display: none;;
+}
+
+
+
+.timetable {
+    font-family: 'EB Garamond', serif;
+    max-width: 60%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;;
+  }
+ 
+  
+  th, td {
+    padding: 5px 7px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+
+  .timetable{
+    
+  }
+
+ 
+  th {
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .table {
+        font-family: 'EB Garamond', serif;
+        border-collapse: collapse;
+        border-collapse: collapse;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 20px;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+      border-radius: 15px;
+      
+    }
+    
+    th, td {
+      white-space: nowrap;
+    }
+  }
 
 
 
