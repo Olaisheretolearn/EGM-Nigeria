@@ -982,6 +982,41 @@ body {
     flex-wrap: wrap;
   }
   
+
+  .electionProcess p {
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    margin-top: 12px;
+    color:#333;
+    
+  }
+
+
+  .message p {
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    margin-top: 12px;
+    color:#333;
+  }
+
+  .howto{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.howtoOne, .howtoTwo , .howtoThree{
+    border: 1px solid red;
+    width: 33.33333%;
+}
+
+
+
+
+
+
+
   .gallery-item {
     flex: 1 0 200px;
     margin: 10px;
