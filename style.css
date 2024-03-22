@@ -1039,14 +1039,24 @@ body {
   }
 
 .howtoOne, .howtoTwo , .howtoThree{
+  
+        transition: transform 1s;
+      
+      
+      
     
     background-color: #f2f2fb;
-    border-top:9px solid   #16192c;;
+    border-top:4px solid   #16192c;;
     border-radius: 5px;
     width: 30.33333%;
     height: 200px;
 }
 
+.howtoOne:hover, .howtoTwo:hover , .howtoThree:hover{
+    
+        transform: scale(1.1);
+      
+}
  .nom {
     margin-left: 22px;;
     margin-top: 12px;
@@ -1081,14 +1091,50 @@ body {
     margin-right: 10px;
 }
 
+.campaign{
+    font-family: 'EB Garamond', serif;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center ;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-radius: 7px;;
+}
+
+
+
+.nameSection{
+    display: flex;
+    border:1px solid #16192c;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px;
+    border:1px solid #16192c;
+    margin-top: -5px;;
+}
+
+.readManifesto{
+    
+    background-color:#16192c;
+    padding:5px;
+   
+}
+
+.readManifesto a{
+    color: white;
+    border-radius: 2px;;
+
+}
+
 
 
 
 
 .timetable {
     font-family: 'EB Garamond', serif;
-    max-width: 50%;
-    margin-top: 20px;
+    max-width: 800px;
+    margin: 20px auto;  /*Change to top if they want it to be by the side */
     padding: 20px;
     background-color: #f7f7f7;
     border-radius: 15px;
@@ -1667,13 +1713,19 @@ object-fit: contain;
   }
 
 .howtoOne, .howtoTwo , .howtoThree{
-    
+    transition: transform 1s;
     background-color: #f2f2fb;
     border-top:3px solid   #16192c;;
     border-radius: 5px;
   
     width:83.33%;
     height: 200px;
+}
+
+.howtoOne:hover, .howtoTwo:hover , .howtoThree:hover{
+    
+    transform: scale(1.1);
+  
 }
 
  .nom {
