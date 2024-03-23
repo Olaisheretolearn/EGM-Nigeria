@@ -1035,7 +1035,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: 34px;;
+    margin-top: 74px;;
+    margin-bottom: 74px;;
+   
   }
 
 .howtoOne, .howtoTwo , .howtoThree{
