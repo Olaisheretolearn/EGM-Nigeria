@@ -105,6 +105,24 @@ body{
     display:none;
 }
 
+.idk{
+    font-family: 'EB Garamond', serif;
+    margin-top: 30px;
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.idks{
+    font-family: 'EB Garamond', serif;
+    margin-top: 30px;
+    text-decoration: underline;
+    font-weight: 800;
+    display:flex;
+    justify-content: center;
+    font-size: 26px;;
+}
+
+
 
 .primaryNavElements .right,.left{
     display: flex;
@@ -1174,7 +1192,62 @@ body {
     border-top: 1px solid #ddd;
   }
 
+/* 
+  ********************** */
 
+  .haha {
+    position: relative;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 11px 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.materials{
+    margin-top:20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.materialsone{
+    padding:8px;
+    border-radius:9px;
+    background-color: #16192c;
+    
+}
+
+.materialsone a{
+    color:white
+}
+
+
+
+
+.dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content2 a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
 
 
 
@@ -1429,6 +1502,17 @@ body {
     }
 
 
+    .idks{
+        font-family: 'EB Garamond', serif;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        text-decoration: underline;
+        font-weight: 800;
+        display:flex;
+        justify-content: center;
+        font-size: 16px;;
+    }
+
 
     .textOnBAnner {
         font-family: 'EB Garamond', serif;
@@ -1529,6 +1613,13 @@ body {
 
 a, a:active, a:focus {
     outline: none;
+}
+
+.materialsone{
+    padding:8px;
+    border-radius:9px;
+    background-color: #16192c;
+    margin-top: 22px;;
 }
 
 
