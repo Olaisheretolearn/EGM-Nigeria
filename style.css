@@ -670,6 +670,21 @@ gap:27px;
     z-index: 1;
 }
 
+ ul li a{
+    color:black;
+    font-family: 'EB Garamond', serif;
+    font-size: larger;
+
+}
+
+
+.dropbtn2 {
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
 /* Style the dropdown links */
 .dropdown-content a {
     color: black;
@@ -687,6 +702,9 @@ gap:27px;
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+
 
 
 .execPictures {
@@ -1179,7 +1197,6 @@ body {
 
 
 
-
   .gallery-item {
     flex: 1 0 200px;
     margin: 10px;
@@ -1353,6 +1370,25 @@ body {
     .navElements{
         display:none;
     }
+
+    
+.content{
+    color:black;
+    font-family: 'EB Garamond', serif;
+    font-size: 11px;
+    display: flex;
+    gap:-3px
+    
+}
+
+.contents{
+    margin-top:-20px;
+}
+
+.content ul li{
+    margin-top:-6px;
+}
+
 
     
 
