@@ -21,9 +21,7 @@
                         <a href="" class="dropbtn2">News and Events</a>
                         <div class="dropdown-content2">
                             <!-- Add more dropdown items as needed -->
-                            <a href="scholarship.html">Scholarships</a>
-                            <a href="Volunteers.html">Volunteers</a>
-                            <a href="gallery.html">Gallery</a>
+                            <a href="recent-events.html">Recent Events</a>
                             
                         </div>
                     </li>
@@ -190,4 +188,251 @@
                 
             
         </section>
+
+
+        <section class="footer">
+            <div class="footer-content">
+            <div class="one">
+
+             <div class="assocName">
+               <div class="logo"><img src="images/Qusera-removebg-preview.png" alt="" ></div>
+               <div class="footertext">
+                <div class="text11">EGM-NIGERIAN</div>
+                <div class="text11">MEMBERS</div>
+                <div class="text11">CHAPTER</div>
+               </div>
+            </div>
+             
+
+            </div>
+
+
+            <div class="two">
+                <div class="contactInfoTitle">Contact Info</div>
+                <div class="contactDetails">
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>&nbsp; &nbsp;
+                          &nbsp; 301 Nassau St N Suite #200 WPG MB R3L 2J5
+                    </div>
+                    <div class="phone-number">
+                        <i class="fas fa-phone"></i>&nbsp; &nbsp;  &nbsp; (431) 777-4119
+                    </div>
+                    <div class="email">
+                        <i class="fas fa-envelope"></i> &nbsp; &nbsp;  &nbsp; nigerianengineers@gmail.com
+                    </div>
+                     <div class="linkedin">
+        <i class="fab fa-linkedin"></i> &nbsp; &nbsp; &nbsp; <a href="https://www.linkedin.com/in/nigerian-members-chapter-egm-884929245/" target="_blank">LinkedIn</a>
+    </div>
+                </div>
+            </div>
+            
+            
+
+
+
+
+            <div class="three">
+                <div class="LinksTitle">Links</div>
+                <div class="otherLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/aboutus.html">About Us</a></li>
+                    <li><a href="scholarship.html">Scholarships</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Volunteering</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="center">Made with ❤️ by &nbsp; <a href="https://olaoluwaoke.com/">Olaoluwa</a></div>
+        </section>
+        
+        
+
+
+
+    <!-- Add this script to your HTML file, make sure to include jQuery if not already included -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+
+// Function to handle fading in and out images
+function fadeImages($wrapper) {
+    var $images = $wrapper.find('img');
+    var currentIndex = 0;
+
+    function showImage(index) {
+        $images.eq(currentIndex).fadeOut(2000, function() {
+            // Callback function to ensure the next image starts fading in after the current one fades out
+            $images.eq(index).fadeIn(2000);
+        });
+        currentIndex = index;
+    }
+
+    // Start the slideshow
+    setInterval(function() {
+        var newIndex = (currentIndex + 1) % $images.length;
+        showImage(newIndex);
+    }, 10000); // Change 10000 to adjust the interval in milliseconds
+}
+
+// Call the fadeImages function for each banner
+fadeImages($('.banner .image-wrapper'));
+fadeImages($('.mobile-banner .image-wrapper'));
+
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const desktopBannerImages = document.querySelectorAll('.banner img');
+//     const mobileBannerImages = document.querySelectorAll('.mobile-banner img');
+//     let currentDesktopImageIndex = 0;
+//     let currentMobileImageIndex = 0;
+
+//     // Function to fade out the current image
+//     function fadeOut(element) {
+//         let opacity = 1;
+//         const fadeEffect = setInterval(function () {
+//             if (!element.style.opacity) {
+//                 element.style.opacity = 1;
+//             }
+//             if (opacity <= 0) {
+//                 clearInterval(fadeEffect);
+//                 element.style.display = 'none';
+//             } else {
+//                 element.style.opacity = opacity;
+//                 opacity -= 0.05;
+//             }
+//         }, 50);
+//     }
+
+//     // Function to fade in the next image
+//     function fadeIn(element) {
+//         let opacity = 0;
+//         element.style.display = 'block';
+//         const fadeEffect = setInterval(function () {
+//             if (!element.style.opacity) {
+//                 element.style.opacity = 0;
+//             }
+//             if (opacity >= 1) {
+//                 clearInterval(fadeEffect);
+//             } else {
+//                 element.style.opacity = opacity;
+//                 opacity += 0.05;
+//             }
+//         }, 50);
+//     }
+
+//     // Change desktop image with fade effect
+//     function changeDesktopImage() {
+//         fadeOut(desktopBannerImages[currentDesktopImageIndex]);
+//         currentDesktopImageIndex = (currentDesktopImageIndex + 1) % desktopBannerImages.length;
+//         fadeIn(desktopBannerImages[currentDesktopImageIndex]);
+//     }
+
+//     // Change mobile image with fade effect
+//     function changeMobileImage() {
+//         fadeOut(mobileBannerImages[currentMobileImageIndex]);
+//         currentMobileImageIndex = (currentMobileImageIndex + 1) % mobileBannerImages.length;
+//         fadeIn(mobileBannerImages[currentMobileImageIndex]);
+//     }
+
+//     // Change desktop image every 3 seconds
+//     setInterval(changeDesktopImage, 5000);
+
+//     // Change mobile image every 3 seconds
+//     setInterval(changeMobileImage, 5000);
+// });
+
+
+
+
+
+    $(document).ready(function() {
+        // Toggle mobile menu on hamburger icon click
+        $(".hamburgerMenu").click(function() {
+            $(".mobile-nav").fadeIn();
+        });
+
+        // Close mobile menu on close-icon click
+        $(".close-icon").click(function() {            $(".mobile-nav").fadeOut();
+        });
+    });
+
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        const mainTextDiv = document.querySelector('.mainText2');
+        const seeMoreButton = document.querySelector('.heroCTAButton a');
+
+        seeMoreButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (mainTextDiv.style.display === 'none') {
+                mainTextDiv.style.display = 'block';
+                seeMoreButton.textContent = 'See Less';
+            } else {
+                mainTextDiv.style.display = 'none';
+                seeMoreButton.textContent = 'See More';
+            }
+        });
+    });
+
+
+
+
+    
+    function validateForm() {
+            var nameInput = document.getElementById("name");
+            var emailInput = document.getElementById("email");
+            var emailError = document.getElementById("emailError");
+            var subjectInput = document.getElementById("subject");
+            var messageInput = document.getElementById("message");
+
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            var valid = true;
+
+            if (!emailRegex.test(emailInput.value)) {
+                emailError.textContent = "Please enter a valid email address";
+                emailInput.parentNode.classList.remove("success");
+                emailInput.parentNode.classList.add("error");
+                valid = false;
+            } else {
+                emailError.textContent = "";
+                emailInput.parentNode.classList.remove("error");
+                emailInput.parentNode.classList.add("success");
+            }
+
+            if (valid) {
+                // Submit the form or perform further actions
+                alert("Form is valid. Submitting...");
+            } else {
+                alert("Form contains errors. Please check and correct.");
+            }
+        }
+
+
+  
+
+  
+</script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65d82f448d261e1b5f644565/1hna7h8p6';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    
+    
+</body>
+</html>
                 
