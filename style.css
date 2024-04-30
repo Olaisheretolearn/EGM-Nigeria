@@ -1102,12 +1102,7 @@ body {
   }
 
 .howtoOne, .howtoTwo , .howtoThree{
-  
         transition: transform 1s;
-      
-      
-      
-    
     background-color: #f2f2fb;
     border-top:4px solid   #16192c;;
     border-radius: 5px;
