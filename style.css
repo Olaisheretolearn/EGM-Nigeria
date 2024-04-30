@@ -101,6 +101,12 @@ body{
     font-family: 'EB Garamond', serif;
 }
 
+.materialheader{
+    font-size:14px;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
 .mobileLogo{
     display:none;
 }
