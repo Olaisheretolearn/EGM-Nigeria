@@ -170,19 +170,19 @@
 
             <div class="howTo">
                 <div class="howtoOne">
-                    <div id="form" class="nom">Candidate Application form</div>
+                    <div id="form" class="nom">Candidate Application form <i style="font-size: 14px;">(available May 15th)</i></div>
                     <div class="formDownload">
                         <p>Click on the link below to download the application form.</p>
             
 
                         <div class="heroCTAi">
                             <div class="heroCTAButtoni">
-                                <a href="files/EasytoFind.docx" download>Download</a>
+                                <a href="files/EasytoFind.docx" id="unclickableLink" download>Download</a>
                             </div>
 
                           
                         </div>
-                        <div class="phoneLink"><a href="files/EasytoFind.docx">Download</a></div>
+                        <div class="phoneLink"><a id="unclickableLink" href="files/EasytoFind.docx">Download</a></div>
 
               
                         
@@ -216,7 +216,7 @@
                         <p class ="guidelines">Click on the link below to view the election guidelines</p>
                              <div class="heroCTAi">
                                 <div class="heroCTAButtoni">
-                                    <a href="">Guidelines</a>
+                                    <a  href="">Guidelines</a>
                                 </div>
                        
                             </div>
@@ -241,7 +241,7 @@
                      governing the democratic process, ensuring transparency, fairness, and equal 
                      opportunity for all potential candidates. Participants are encouraged to thoroughly 
                      review and adhere
-                     to the outlined criteria to facilitate a seamless and inclusive electoral process. Click <a style="color: black;" href="files/2024 Election Criteria v1 .docx"><strong>here ↗</strong></a> to download the Election Criteria</p>
+                     to the outlined criteria to facilitate a seamless and inclusive electoral process. Click <a style="color: black;"  id="unclickableLink" href="files/2024 Election Criteria v1 .docx"><strong>here ↗</strong></a> to download the Election Criteria  <i><i>(available May 15th)</i>git</i></p>
                     
         </div>
 
@@ -579,6 +579,8 @@
         
 
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+       
         <script>
             $(document).ready(function() {
                 // Toggle mobile menu on hamburger icon click
@@ -589,6 +591,13 @@
                 // Close mobile menu on close-icon click
                 $(".close-icon").click(function() {            $(".mobile-nav").fadeOut();
                 });
+            });
+
+
+
+
+             document.getElementById("unclickableLink").addEventListener("click", function(event){
+                event.preventDefault(); // Prevents the default action
             });
             </script>
 
