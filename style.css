@@ -1139,8 +1139,6 @@ body {
 .position{
     display: flex;
     flex-direction: row;
-    width: 400px;
-    
     margin-left: 22px;;
     margin-top: 12px;
     font-size: larger;
